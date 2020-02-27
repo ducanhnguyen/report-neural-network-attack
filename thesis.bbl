@@ -1,0 +1,79 @@
+\begin{thebibliography}{10}
+
+\bibitem{speech-processing}
+G.~{Hinton}, L.~{Deng}, D.~{Yu}, G.~E. {Dahl}, A.~{Mohamed}, N.~{Jaitly},
+  A.~{Senior}, V.~{Vanhoucke}, P.~{Nguyen}, T.~N. {Sainath}, and
+  B.~{Kingsbury}, ``Deep neural networks for acoustic modeling in speech
+  recognition: The shared views of four research groups,'' {\em IEEE Signal
+  Processing Magazine}, vol.~29, pp.~82--97, Nov 2012.
+
+\bibitem{image-processing}
+D.~{Ciregan}, U.~{Meier}, and J.~{Schmidhuber}, ``Multi-column deep neural
+  networks for image classification,'' in {\em 2012 IEEE Conference on Computer
+  Vision and Pattern Recognition}, pp.~3642--3649, June 2012.
+
+\bibitem{medical-diagnosis}
+D.~Ciresan, A.~Giusti, L.~M. Gambardella, and J.~Schmidhuber, ``Deep neural
+  networks segment neuronal membranes in electron microscopy images,'' in {\em
+  Advances in Neural Information Processing Systems 25} (F.~Pereira, C.~J.~C.
+  Burges, L.~Bottou, and K.~Q. Weinberger, eds.), pp.~2843--2851, Curran
+  Associates, Inc., 2012.
+
+\bibitem{DeepXplore}
+K.~Pei, Y.~Cao, J.~Yang, and S.~Jana, ``Deepxplore: Automated whitebox testing
+  of deep learning systems,'' {\em CoRR}, vol.~abs/1705.06640, 2017.
+
+\bibitem{deepfault}
+H.~F. Eniser, S.~Gerasimou, and A.~Sen, ``Deepfault: Fault localization for
+  deep neural networks,'' {\em CoRR}, vol.~abs/1902.05974, 2019.
+
+\bibitem{DBLP:journals/corr/GrossePM0M16}
+K.~Grosse, N.~Papernot, P.~Manoharan, M.~Backes, and P.~D. McDaniel,
+  ``Adversarial perturbations against deep neural networks for malware
+  classification,'' {\em CoRR}, vol.~abs/1606.04435, 2016.
+
+\bibitem{42503}
+C.~Szegedy, W.~Zaremba, I.~Sutskever, J.~Bruna, D.~Erhan, I.~Goodfellow, and
+  R.~Fergus, ``Intriguing properties of neural networks,'' in {\em
+  International Conference on Learning Representations}, 2014.
+
+\bibitem{deep-gauge}
+L.~Ma, F.~Juefei{-}Xu, J.~Sun, C.~Chen, T.~Su, F.~Zhang, M.~Xue, B.~Li, L.~Li,
+  Y.~Liu, J.~Zhao, and Y.~Wang, ``Deepgauge: Comprehensive and
+  multi-granularity testing criteria for gauging the robustness of deep
+  learning systems,'' {\em CoRR}, vol.~abs/1803.07519, 2018.
+
+\bibitem{deepct}
+L.~{Ma}, F.~{Juefei-Xu}, M.~{Xue}, B.~{Li}, L.~{Li}, Y.~{Liu}, and J.~{Zhao},
+  ``Deepct: Tomographic combinatorial testing for deep learning systems,'' in
+  {\em 2019 IEEE 26th International Conference on Software Analysis, Evolution
+  and Reengineering (SANER)}, pp.~614--618, Feb 2019.
+
+\bibitem{deeproad}
+M.~Zhang, Y.~Zhang, L.~Zhang, C.~Liu, and S.~Khurshid, ``Deeproad: Gan-based
+  metamorphic autonomous driving system testing,'' {\em CoRR},
+  vol.~abs/1802.02295, 2018.
+
+\bibitem{deeptest}
+Y.~Tian, K.~Pei, S.~Jana, and B.~Ray, ``Deeptest: Automated testing of
+  deep-neural-network-driven autonomous cars,'' {\em CoRR},
+  vol.~abs/1708.08559, 2017.
+
+\bibitem{concolic-testing}
+Y.~Sun, M.~Wu, W.~Ruan, X.~Huang, M.~Kwiatkowska, and D.~Kroening, ``Concolic
+  testing for deep neural networks,'' {\em CoRR}, vol.~abs/1805.00089, 2018.
+
+\bibitem{coverage-limiation}
+Z.~Li, X.~Ma, C.~Xu, and C.~Cao, ``Structural coverage criteria for neural
+  networks could be misleading,'' in {\em Proceedings of the 41st International
+  Conference on Software Engineering: New Ideas and Emerging Results},
+  ICSE-NIER '19, (Piscataway, NJ, USA), pp.~89--92, IEEE Press, 2019.
+
+\bibitem{gan}
+I.~J. Goodfellow, J.~Pouget-Abadie, M.~Mirza, B.~Xu, D.~Warde-Farley, S.~Ozair,
+  A.~Courville, and Y.~Bengio, ``Generative adversarial nets,'' in {\em
+  Proceedings of the 27th International Conference on Neural Information
+  Processing Systems - Volume 2}, NIPS'14, (Cambridge, MA, USA),
+  pp.~2672--2680, MIT Press, 2014.
+
+\end{thebibliography}

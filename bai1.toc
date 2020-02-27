@@ -1,0 +1,23 @@
+\contentsline {section}{Lời nói đầu}{3}
+\contentsline {section}{Quy tắc thứ 1: Hãy đưa tất cả mọi người vào trong kế hoạch, và lập các kế hoạch dự phòng}{4}
+\contentsline {section}{Quy tắc thứ 2: Hãy là một nhà ngoại giao bằng cách quản lý mục tiêu đạt được càng sớm càng tốt}{5}
+\contentsline {section}{Quy tắc thứ 3: Định nghĩa lại phạm vi nghiên cứu: Khám phá và quen thuộc, rồi hãy thực dụng}{6}
+\contentsline {section}{Quy tắc thứ 4: Đừng xấu hổ khi bạn hỏi những câu hỏi ngu ngốc}{7}
+\contentsline {section}{Quy tắc thứ 5: Xây dựng mạng lưới: Tìm những người lấp đầy khoảng trống}{7}
+\contentsline {section}{Quy tắc thứ 6: Chấp nhận bộ kĩ năng độc nhất của bạn và sử dụng chúng để định nghĩa lại phạm vi nghiên cứu}{9}
+\contentsline {section}{Quy tắc thứ 7: Cảm thấy tự do khi bơi ngược dòng chảy, tiến hành thí nghiệm, và thất bại}{10}
+\contentsline {section}{Quy tắc thứ 8: Lên kế hoạch cho sự nghiệp và công bố}{10}
+\contentsline {section}{Quy tắc thứ 9: Điều chỉnh cho phù hợp với người nghe}{11}
+\contentsline {section}{Quy tắc thứ 10: Hãy nghỉ ngơi và thưởng thức cuộc sống}{12}
+\contentsline {section}{Phụ lục}{16}
+\contentsline {paragraph}{Introduction}{16}
+\contentsline {paragraph}{Rule 1: Involve everyone in the planning, and make contingency plans}{17}
+\contentsline {paragraph}{Rule 2: Be a diplomat: Start managing expectations early on}{18}
+\contentsline {paragraph}{Rule 3: Define the boundaries of your research: Explore and familiarise, then be pragmatic}{18}
+\contentsline {paragraph}{Rule 4: Don’t be embarrassed: Always ask the “stupid question”}{19}
+\contentsline {paragraph}{Rule 5: Build a network: Find other people to complement the gaps}{20}
+\contentsline {paragraph}{Rule 6: Embrace your unique skillset and use it to redefine discipline boundaries}{20}
+\contentsline {paragraph}{Rule 7: Feel free to swim against the flow, to experiment, and to fail}{21}
+\contentsline {paragraph}{Rule 8: Plan your career and publish accordingly}{22}
+\contentsline {paragraph}{Rule 9: Adjust to your audience}{23}
+\contentsline {paragraph}{Rule 10: Relax and enjoy}{23}
