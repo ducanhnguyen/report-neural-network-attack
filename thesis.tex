@@ -6,7 +6,7 @@
 \usepackage{float}
 
 \usepackage{amssymb}
-
+\usepackage{pdfpages}
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{amsthm}
@@ -34,19 +34,22 @@
 
 \date{}
 \begin{document}
-\maketitle
+	\begin{titlepage}
+		\includepdf[pages=-]{bia.pdf}
+	\end{titlepage}
+%\maketitle
 
 \newpage
 \begin{center}
 	\textbf{Disclaimer}
 \end{center}
-This work is done based on my understanding of the chosen author' publications in particular and the foundation of machine learning in general. Therefore, what I presented here may be incorrect to some extent. If readers have any comment on my report, please feel free to contact me. The comment of other readers are valuable to me.
+This work is done based on my understanding of the chosen author's publications in particular and the foundation of machine learning in general. Therefore, what I presented here may be incorrect to some extent. If readers have any comment on my report, please feel free to contact me. The comment of readers is valuable to me.
 
-I would like to thank Prof. Thuy Ha Quang, Prof. Thuan Ninh Truong, and Prof. Ha Viet Nguyen about their valuable knowledge about lectures about research methods and latex skills. This report is done on latex and available at.
+I would like to thank Assoc. Prof. Thuy Ha Quang, Assoc. Prof. Thuan Ninh Truong, and Assoc. Prof. Ha Viet Nguyen.  They not only taught valuable knowledge about research methods and latex skills but also inspired me to become a true researcher. Based on what  I have learnt during this course, this report is done on latex and available here\footnote{https://github.com/ducanhnguyen/report-neural-network-attack}.
 
 \newpage
 \begin{center}
-	\textbf{About author}
+	\textbf{About the main author}
 \end{center}
 
 Nicholas Carlini\footnote{https://nicholas.carlini.com} is a research scientist at Google Brain working at the intersection of machine learning and computer security. His most recent line of work studies properties of neural networks from an adversarial perspective. He received Ph.D. from UC Berkeley in 2018, and B.A. in computer science and mathematics (also from UC Berkeley) in 2013. 
@@ -55,7 +58,7 @@ Previously he interned at Google Brain, evaluating the privacy of machine learni
 
 From my perspective, both his research and my research interests are related to the topic "testing for AI systems". His academic background is really good. The chosen thesis is developed from the paper "Towards Evaluating the Robustness of Neural Networks" presented at IEEE S\&P in 2017. With this paper, he received the best student paper award.
 
-I am really execited to read the research of Nicholas Carlini et al. to strengthen my research background in this topic. The expectation includes but not limited to (1) mathematics, (2) the way he organized the thesis to convince the council, and (3) dig into new idea behind this thesis.
+I am excited to read the research of Nicholas Carlini et al. to strengthen my research background in this topic. The expectation includes but not limited to (1) mathematics, (2) the way he organized the thesis to convince the council, and (3) dig into the new idea behind this thesis.
 
 %Summary the work of Nicholas Carlini\footnote{https://nicholas.carlini.com}: the key point, the structure of thesis
 
@@ -89,11 +92,11 @@ Although the testing for neural network models is urgent and important, it has j
 \textit{Second}, the testing phase of neural network models is usually performed manually by ML practitioners most of the time. These practitioners give a little concern about how to test neural network models automatically. Even if they spend more efforts on testing neural network models automatically, there are only a limited set of automated testing tools for neural network models up to now. 
 %Hence, the testing of neural network models should be automated to reduce to cost of the testing phase.
 
-To address the above problems, Nicholas Carlini et al. aimed to focus on testing the correctness of neural networks by attacking these models. The authors realized that neural network models, even these models are proved good enough, are prone to evasion attack. Evasion attack is a type of attack in which neural network models are fed with adversarial samples. In this context, evasion attack, known as \textit{adversarial samples}, can be described as follows: Given a sample $x$ (may be classified correctly or not by a neural network model) and a target class $t$, it is possible to find $x'$ which is classified as class $t$, and $x'$ is close to $x$. Term \textit{close} means that there is no significant differences between $x$ and $x'$ in terms of norm distance such as $||L||_0$, $||L||_1$, $||L||_2$, or $||L||_\infty$. 
+To address the above problems, Nicholas Carlini et al. focused on testing the correctness of neural networks by attacking these models. The authors realized that neural network models, even if these models are proved good enough, are prone to evasion attack. Evasion attack is a type of attack in which neural network models are fed with adversarial samples. In this context, evasion attack, known as \textit{adversarial samples}, can be described as follows: Given a sample $x$ (may be classified correctly or not by a neural network model) and a target class $t$, it is possible to find $x'$ which is classified as class $t$, and $x'$ is close to $x$. Term \textit{close} means that there is no significant differences between $x$ and $x'$ in terms of norm distance such as $||L||_0$, $||L||_1$, $||L||_2$, or $||L||_\infty$. 
 
-From the given problem statement, the authors proposed three kinds of attacks, namely $||L||_2$ attack, $||L||_0$ attack, and $||L||_\infty$ attack. However, this report only focus on $||L||_2$ attack and $||L||_0$ attack which I understand the best and can spend more time on digging the implementation of these attacks. $||L||_2$ is highly recommended among the three proposed attacks. In order to evaluate the effectiveness of the proposed attacks, their experiment was performed on three type of applications including (i) breaking defenses of existing neural network models, (ii) speech recognition, and (iii) malware classification. The source code of the thesis is fully available here\footnote{https://github.com/carlini/nn\_robust\_attacks}.
+From the given problem statement, the authors proposed three kinds of attacks, namely $||L||_2$ attack, $||L||_0$ attack, and $||L||_\infty$ attack. However, this report only focuses on $||L||_2$ attack and $||L||_0$ attack which I understand well. $||L||_2$ is highly recommended among the three proposed attacks. To evaluate the effectiveness of the proposed attacks, their experiment was performed on three types of applications including (i) breaking defences of existing neural network models, (ii) speech recognition, and (iii) malware classification. The source code of the thesis is fully available here\footnote{https://github.com/carlini/nn\_robust\_attacks}.
 
-This remaining part of this report includes 7 sections. Firstly, the report presents related works which are synthesised from the resources I have covered so far, including the thesis of the authors. After that, I describe the problem formulation which is summarized in the thesis. The next section provides the background about the related techniques/mathematics to adversarial samples. The report continues with dataset section giving the description about the dataset used in the experiment, and the result of rebuit model made by me. The proposed attacks section presents the attacks which the author suggested. Finally, the report concludes in the last section.
+This remaining part of this report includes six sections. Firstly, the report presents related works which are synthesised from the resources I have covered so far, including the thesis of the authors. After that, I describe the problem formulation which is summarized in the thesis. The next section provides the background about the related techniques/mathematics to adversarial samples. The report continues with a section giving the description of the dataset used in the experiment, and the result of the rebuilt model made by me. The proposed attacks section presents the attacks which the authors suggested. Finally, the report is concluded in the last section.
 
 \section{Related Works}
 
@@ -116,9 +119,9 @@ Li et al. investigated the advantages and disadvantages of structural coverage c
 
 \section{Problem formulation}
 
-The author started from the original formula of adversarial sample generations, proposed by Szegedy et. al. \cite{42503}, defined as follows:
+The authors started from the original formula of adversarial sample generations, proposed by Szegedy et. al. \cite{42503}, defined as follows:
 
-Given a n-dimensional vector $x \in \mathbb{R}^n$ in which $x$ is classified incorrectly: $C(x) \ne t$, where $t$ is the true class of $x$. We need to find $x' = x + \delta \in \mathbb{R}^n$ such that $x'$ is valid and predicted correctly while $x'$ is close to $x$ as follows:
+Given a n-dimensional vector $x \in \mathbb{R}^n$ in which $x$ is classified incorrectly or not, and a target $t$. We need to find $x' = x + \delta \in \mathbb{R}^n$ such that $x'$ is valid and classified as target $t$ while $x'$ is close to $x$:
 
 \begin{equation}
 \begin{split}
@@ -133,7 +136,7 @@ Given a n-dimensional vector $x \in \mathbb{R}^n$ in which $x$ is classified inc
 
 However, the formula (\ref{eqn:original-adversarial-sample-formula}) is hard to solve in practice due to the high level complexity of $C(x+\delta) = t$. In fact, $C(x+\delta) = t$ is highly non-linear which struggles to solve. Therefore, Szegedy et. al. suggested that formula (\ref{eqn:original-adversarial-sample-formula}) should be redefined to make it easier to solve.
 
-Normally, formula (\ref{eqn:original-adversarial-sample-formula}) is that  $C(x+\delta) = t$ is removed while adding a new formula $f(x+\delta) <= 0$: $C(x+\delta) = t$ if and only if $f(x+\delta) <= 0$.
+Therefore, formula (\ref{eqn:original-adversarial-sample-formula}) is that  $C(x+\delta) = t$ is removed while adding a new formula $f(x+\delta) <= 0$: $C(x+\delta) = t$ if and only if $f(x+\delta) <= 0$.
 
 \begin{equation}
 \begin{split}
@@ -162,7 +165,7 @@ Szegedy et. al.  used a similar approach by proposing that formula (\ref{eqn:mod
 
 \section{Background}
 
-This section provides background on adversarial samples generation mentioned in the original paper. Firstly, this report describes $||L||_p$ norm which is used to compute the distance between two k-dimensional vectors. After that, the detail description of standard gradient descent and its variants are presented. Finally, the report covers box-constraints technique used to generate valid images.
+This section provides background on adversarial sample generation mentioned in the original paper. Firstly, this report describes $||L||_p$ norm which is used to compute the distance between two k-dimensional vectors. After that, the detail description of standard gradient descent and its variants are presented. Finally, the report covers box-constraints technique used to generate valid images.
 
 %\subsection{Neural network}
 %
@@ -238,7 +241,7 @@ Given the objective function $f(x)$, find $x$ to minimize $f(x)$. Gradient desce
 
 \subsubsection{Standard gradient descent}
 	
-The main idea of \textit{standard gradient descent }is that $x$ is modified iteratively in the opposite direction of $f'(x)$. The formula of the standard gradient descent can be written as follows:
+The main idea of \textit{standard gradient descent} is that $x$ is modified iteratively in the opposite direction of $f'(x)$. The formula of the standard gradient descent can be written as follows:
 
 \begin{equation}
 	\label{eqn:sgd}
@@ -249,8 +252,9 @@ The main idea of \textit{standard gradient descent }is that $x$ is modified iter
 In formula (\ref{eqn:sgd}), learning rate $\eta$ is a hyperparameter and should be fine-tuned. There are several main points about the formula (\ref{eqn:sgd}).
 
 \begin{itemize}
-	\item Initialize $\eta$.  Usually, $\eta$ is initialized at a relatively small positive value, e.g., $\eta = 0.01$ or $\eta = 0.001$. If the value of $\eta$ is too small, the process of gradient descent may take larger number of iterations, leading to a waste of time. Otherwises, in the case that the value of $\eta$ is large, gradient descent process may go over the optimal value of $x$ due to the large jump of $x$.
-	\item Constant $\eta$. Depending on the type of gradient descent technique, the value of learning rate $\eta$ is a constant (e.g., standard gradient descent, Nesterov momentum) or can be changed during gradient descent process (e.g., step decay, exponential decay, $1/t$ decay).
+	\item Initialize $\eta$.  Usually, $\eta$ is initialized at a relatively small positive value, e.g., $\eta = 0.01$ or $\eta = 0.001$. If the value of $\eta$ is too small, the process of gradient descent may take a larger number of iterations, leading to a waste of time. Otherwise, in the case that the value of $\eta$ is large, gradient descent process may go over the optimal value of $x$ due to the large jump of $x$.
+	
+	Additionally, depending on the type of gradient descent technique, the value of learning rate $\eta$ is a constant (e.g., standard gradient descent, Nesterov momentum) or can be changed during gradient descent process (e.g., step decay, exponential decay, $1/t$ decay).
 	\item Sign of $f'(x)$ . There are two cases happening with the sign of $f'(x)$:
 	
 	\begin{itemize}
@@ -286,7 +290,7 @@ Comparing to formula (\ref{eqn:sgd}), formula (\ref{eqn:sgd-momentum-v2}) adds $
 
 \subsubsection{Nesterov accelerated gradient}
 
-Nesterov accelerated gradient (NAG) improves momentum gradient descent by converging to the optimal $x$ faster. In order to do that, NAG will look ahead one iteration.
+Nesterov accelerated gradient (NAG) improves momentum gradient descent by converging to the optimal $x$ faster. In order to do that, NAG looks ahead one iteration.
 
 \begin{equation}
 \begin{split}
@@ -307,9 +311,9 @@ x = x - (\mu * v_{t-1} + \eta * f'(x - \mu * v_{t-1}))
 
 \subsection{Box Constraints}
 
-The essense of adversarial sample generations is that the original sample $x$ is modified into $x' = x + \delta$. This modification may lead to an invalid sample $x'$. Therefore, we need to align $x'$ to the available range of value. In this thesis, the available range of each pixel is in $[0..1]$.
+The essence of adversarial sample generations is that the original sample $x$ is modified into $x' = x + \delta$. This modification may lead to an invalid sample $x'$. Therefore, we need to align $x'$ to the available range of value. In this thesis, the available range of each pixel is in $[0..1]$.
 
-The author investigated there method to deal with this problem:
+The authors investigate there methods to deal with this problem:
 
 \begin{itemize}
 	\item \textit{Projected gradient descent}. At each step of the standard gradient descent, all the pixels out of available range is cut off. 
@@ -321,29 +325,24 @@ The author investigated there method to deal with this problem:
 	
 	\item \textit{Changes of variables}. Instead of using variable $\delta$, they use a new variable $w$ as follows:
 	\begin{equation}
-		\delta = 1/2 * (tanh(w) + 1) - x \label{eqn:change-of-variables}
+	\delta = 1/2 * (tanh(w) + 1) - x \label{eqn:change-of-variables}
 	\end{equation},
 	where $w, \delta, x$ is a n-dimensional vector.
 	
-	Because $tanh(w) \in [-1, 1]^n$, $1/2 * (tanh(w) + 1) \in [0, 1]^n$; hence $x + \delta \in [0,1]^n$. This formula (\ref{eqa:change-of-variables}) ensures that $x'$ is a valid image. 
+	Because $tanh(w) \in [-1, 1]^n$, $1/2 * (tanh(w) + 1) \in [0, 1]^n$; hence $x + \delta \in [0,1]^n$. This formula (\ref{eqn:change-of-variables}) ensures that $x'$ is a valid image. 
 \end{itemize}
-
-\begin{definition}
-	Objective function
-\end{definition}
-
 
 \section{Dataset}
 
-The authors used the two primary datasets: MNIST, CIFAR to evaluate their proposed attacks. In this report, I just use dataset MNIST to reevaluate their experiments. I re-run the training process of MNIST dataset and report the results below.
+The authors used the two primary datasets: MNIST, CIFAR to evaluate their proposed attacks. In this report, I just use dataset MNIST to re-evaluate their experiments. I re-run the training process of MNIST dataset and report the results below.
 
 \subsection{MNIST}
-MNIST is a dataset of digit recognizer which can be found officially on Kaggle\footnote{https://www.kaggle.com/c/digit-recognizer/data}. The training set contains 60,000 samples. The test set has 10,000 samples.  Each sample on the dataset is an image with 28 pixel in width and 28 pixel in height. The value of each pixel is in range of 0 and 255, which indicates the lightness or darkness of that pixel.
+MNIST is a dataset of digit recognizer which can be found officially on Kaggle\footnote{https://www.kaggle.com/c/digit-recognizer/data}. The training set contains 60,000 samples. The test set has 10,000 samples.  Each sample on the dataset is an image with 28 pixels in width and 28 pixels in height. The value of each pixel is in range of 0 and 255, which indicates the lightness or darkness of that pixel.
 
-%In the above experiment, value of every pixel in each image is scale in range of [0..1] first, then scale to [-0.5, 0.5].
+%In the above experiment, the value of every pixel in each image is the scale in the range of [0..1] first, then scale to [-0.5, 0.5].
 
 \subsection{CNN model}
-Table \ref{tab:CNN-architecture-MNIST} illustrates the configuration of \gls{cnn} model used to train MNIST. Figure \ref{fig:MNIST-implementation} described the corresponding implementation of this model in python. For example, starting with the input having shape \textit{(size of batch, height = 28, width = 28, n\_channel = 1)}, this input is passed through a convolution layer with kernel \textit{(3 x 3)}, 32 filters, and \textit{valid} padding. A convolution layer with \textit{valid padding} option ensure that the kernel of convolution layer only move in the input (i.e., not go out of the border). Therefore, the output of convolution layer with this padding has:
+Table \ref{tab:CNN-architecture-MNIST} illustrates the configuration of \gls{cnn} model used to train MNIST. Figure \ref{fig:MNIST-implementation} described the corresponding implementation of this model in python. For example, starting with the input having shape \textit{(size of batch, height = 28, width = 28, n\_channel = 1)}, this input is passed through a convolution layer with kernel $(3 \times 3)$, 32 filters, and \textit{valid} padding. A convolution layer with \textit{valid padding} option ensure that the kernel of convolution layer only moves inside the input (i.e., not go out of the border). Therefore, the output of convolution layer with this padding has:
 \begin{center}
 	$width\_output = width\_input - width\_kernel + 1 = 28 - 3 + 1 = 26$, and
 	
@@ -388,16 +387,16 @@ Therefore, the output of the first convolutional layer has shape (width = 26, he
 
 
 \subsection{Training}
-The model is trained with the following fine-tuning hypeparameters: learning rate $\eta = 0.01$, decay = 1e-6, momentum = 0.9. To overcome optimal solution during batch gradient descent, they applied Nesterov momentum. The training process is taken in 50 iterations with batch = 128 samples. Like the orginal experiment, there is no data-set augmentation in the re-evaluation.
+The model is trained with the following fine-tuning hyperparameters: learning rate $\eta = 0.01$, decay = 1e-6, momentum = 0.9. To overcome the optimal solution during batch gradient descent, they applied Nesterov momentum. The training process is taken in 50 iterations with batch = 128 samples. Like the original experiment, there is no data-set augmentation in the re-evaluation.
 
-The achieved accuracy of CNN model is 0.9985\%. While figure \ref{fig:MNIST-accuracy} shows the accuracy over iterations when training MNIST, figure \ref{fig:MNIST-loss} illustrates the value of loss function over 50 iterations.
+The achieved accuracy of the CNN model is 0.9985\%. While figure \ref{fig:MNIST-accuracy} shows the accuracy over iterations when training MNIST, figure \ref{fig:MNIST-loss} illustrates the value of loss function over 50 iterations.
 
 \begin{figure}[H]
 	\centering
 	\caption{Accuracy over iterations when training MNIST}
 		\label{fig:MNIST-accuracy}
 	\vspace{2mm}
-	\includegraphics[scale=0.35]{img/MNIST_accuracy}
+	\includegraphics[scale=0.3]{img/MNIST_accuracy}
 \end{figure}
 
 \begin{figure}[H]
@@ -405,7 +404,7 @@ The achieved accuracy of CNN model is 0.9985\%. While figure \ref{fig:MNIST-accu
 	\caption{Loss over iterations when training MNIST}
 		\label{fig:MNIST-loss}
 	\vspace{2mm}
-	\includegraphics[scale=0.35]{img/MNIST_loss}
+	\includegraphics[scale=0.3]{img/MNIST_loss}
 \end{figure}
 
 
@@ -443,15 +442,15 @@ In the above objective function (\ref{eqn:modified-adversarial-sample-formula-v6
 	\includegraphics[scale=0.6]{img/f}
 	\vspace{-4mm}	
 \end{figure*}
-, where $s$ is the correct classification; ($e)_+$ is short-hand for $max(e, 0)$; $softplus(x) = log(1+exp(x))$.
+, where $t$ is the target classification; ($e)^+$ is short-hand for $max(e, 0)$; $softplus(x) = log(1+exp(x))$.
 
-The authors took expriments to find the best function among $f_1(x')$ to $f_6(x')$. They conclude $f_6(x')$ showed the most significant result compared to the other functions.
+The authors took expriments to find the best function among $f_1(x')$ to $f_6(x')$. They concluded $f_6(x')$ showed the most significant result compared to the other functions.
 
 Hence, the problem statement is refined as follows:
 
 \begin{equation}
 \begin{split}
-\label{eqn:modified-adversarial-sample-formula-v6}
+\label{eqn:modified-adversarial-sample-formula-v7}
 \text{minimize } ||\delta||_p + c \cdot max(\max2_{i \neq t} (Z(x')_i) - Z(x')_t), 0)
 \\
 \text{such that } x + \delta \in [0..1]^n
@@ -463,7 +462,7 @@ The authors made use of "change of variable" method (formula \ref{eqn:change-of-
 \begin{center}
 	\begin{equation}
 	\begin{split}
-	\label{eqn:modified-adversarial-sample-formula-v7}
+	\label{eqn:modified-adversarial-sample-formula-v8}
 	\text{minimize } ||1/2 * (tanh(w) + 1) - x||_p + 
 	\\
 	c \cdot max(\max2_{i \neq t} (Z(1/2 * (tanh(w) + 1) )_i) - Z(1/2 * (tanh(w) + 1) )_t), 0)
@@ -475,7 +474,7 @@ The authors made use of "change of variable" method (formula \ref{eqn:change-of-
 
 \subsection{$||L||_2$ attack}
 
-Given the formula (\ref{eqn:modified-adversarial-sample-formula-v7}), the author tried to  generate adversarial samples. The original idea of  $||L||_2$ attack is as follows:
+Given the formula (\ref{eqn:modified-adversarial-sample-formula-v8}), the authors came up with an idea to generate adversarial samples. The original idea of  $||L||_2$ attack is as follows:
 
 \begin{itemize}
 	\item \textit{Step 0}. Start with target class $t$, the original sample $x$, and the neural network model $N$ trained before; $C^*(x) $ is the true class of $x$; $C(x) \ne t$ is the predicted class of $x$ given model $N$.
@@ -487,34 +486,34 @@ Given the formula (\ref{eqn:modified-adversarial-sample-formula-v7}), the author
 	
 \end{itemize}
 
-The above $||L||_2$ attack has a major disadvantage. The returned $x'$ may be a local optimal solution which is caused by the chosen learning rate $\eta$. Since the research just used standard gradient descent, choosing small value of $\eta$ is just enough though it may take more iterations.
+The above $||L||_2$ attack has a major disadvantage. The returned $x'$ maybe a locally optimal solution which is caused by the chosen learning rate $\eta$. Since the research just used standard gradient descent, choosing a small value of $\eta$ is just enough though it may take more iterations.
 
-Instead of changing $\eta$, the authors proposed \textit{multiple starting-point gradient descent}. The idea of this technique is that rather than starting at $x$, $||L||_2$ attack starts with $x^* $ where $x^*$ is close to $x$. To reduce the cost of adversarial sample generation, the number of iterations in standard gradient descent is fixed since there are many similar point $x^*$.
+Instead of changing $\eta$, the authors proposed \textit{multiple starting-point gradient descent}. The idea of this technique is that rather than starting at $x$, $||L||_2$ attack starts with $x^* $ where $x^*$ is close to $x$. To reduce the cost of adversarial sample generation, the number of iterations in standard gradient descent is fixed since there are many similar points $x^*$.
 
-% They randomly sample points uniformly from the ball of radius $r$, where $r$ is the closest adversarial example found so far. Intially, $r = 0$
+% They randomly sample points uniformly from the ball of radius $r$, where $r$ is the closest adversarial example found so far. Initially, $r = 0$
 
 
-An example of $||L||_2$ attack on MNIST is shown in Fig.~\ref{fig:L2-attack-sample}. The result of adversarial sample generation for s digit include three parts: (i) a source digit, (ii) target digit, and (iii) an adversarial image. Almost all attacks are visually indistinguishable from the original digit.
+An example of $||L||_2$ attack on MNIST is shown in Fig.~\ref{fig:L2-attack-sample}. The result of adversarial sample generation for a digit includes three parts: (i) a source digit, (ii) target digit, and (iii) an adversarial image. Almost all attacks are visually indistinguishable from the original digit.
 
 \begin{figure}[h]
 	\centering
 	\caption{Perform $||L||_2$ attack on MNIST}
-		\label{fig:L2-attack-sample}
+	\label{fig:L2-attack-sample}
 	%\vspace{-6mm}
-	%	\vspace*{5mm} 
-	\includegraphics[scale=0.47]{img/L2-attack-sample}
-	%	\vspace{-4mm}	
+	%    \vspace*{5mm} 
+	\includegraphics[scale=0.5]{img/L2-attack-sample}
+	%    \vspace{-4mm}    
 \end{figure}
 
 \subsection{$||L||_0$ attack}
 Because $||L||_0$ is non-differentiable, therefore, the authors proposed an interative algorithm to perform $||L||_0$ attack.
 
-Rather than computing the derivative of both terms in formula (\ref{eqn:modified-adversarial-sample-formula-v7}, they just considered the second terms. The first term $||L||_0$ is ignored.
+Rather than computing the derivative of both terms in formula (\ref{eqn:modified-adversarial-sample-formula-v8}), they just considered the second terms. The first term $||L||_0$ is ignored.
 
 \begin{itemize}
 	\item \textit{Step 0}. Start with target class $t$, the original sample $x$, and the neural network model $N$ trained before; $C^*(x) $ is the true class of $x$; $C(x) \ne t$ is the predicted class of $x$ given model $N$. Denote the allowed set $S$ containing all pixels in $x$. All the pixels out of $S$ are fixed (can not be changed). $S$ only contains the pixels which can be changed to generate adversarial samples $x'$.
 	
-	\item \textit{Step 1. Shrink the allowed set $S$}. 	Perform $||L||_2$ attack above with respect to the pixels in $S$. There are two cases happening:
+	\item \textit{Step 1. Shrink the allowed set $S$}.     Perform $||L||_2$ attack above with respect to the pixels in $S$. Two cases are happening:
 	\begin{itemize}
 		\item Case 1: Can not find adversarial sample. In this case, the algorithm terminates.
 		\item Case 2: Find an adversarial sample $x_{i+1}$. Remove the pixel \textit{j}-th in $S$ which has the least influence on creating adversarial sample $x'$
@@ -531,7 +530,7 @@ Rather than computing the derivative of both terms in formula (\ref{eqn:modified
 	
 \end{itemize}
 
-When performing $||L||_0$ attack, the value of constant $c$ is initialized to a very low value (e.g., $10^{-4}$). The threshold of $c$ should be high ()e.g., $10^{10}]$). At step 1, if $||L||_2$ attack can not found any adversarial sample, the value of $c$ is double until it reaches the limitation.
+When performing $||L||_0$ attack, the value of constant $c$ is initialized to a very low value (e.g., $10^{-4}$). The threshold of $c$ should be high (e.g., $10^{10}]$). At step 1, if $||L||_2$ attack can not found any adversarial sample, the value of $c$ is double until it reaches the limitation.
 
 An example of $||L||_0$ attack on MNIST is shown in Fig.~\ref{fig:L0-attack-sample}.
 The attacks are east to realize the diference because the $||L||_0$ attack is more difficult than $||L||_2$.
@@ -542,7 +541,7 @@ The attacks are east to realize the diference because the $||L||_0$ attack is mo
 	\caption{Perform $||L||_0$ attack on MNIST}
 	%\vspace{-6mm}
 %	\vspace*{5mm} 
-	\includegraphics[scale=0.47]{img/L0-attack-sample}
+	\includegraphics[scale=0.5]{img/L0-attack-sample}
 %	\vspace{-4mm}	
 \end{figure}
 
@@ -563,9 +562,9 @@ The attacks are east to realize the diference because the $||L||_0$ attack is mo
 
 \section{Conclusion}
 
-The report covers the two efficient adversarial attacks: $||L||_0$ attack and $||L||_2$ attack. These types of attack aim to generate new sample from original samples in dataset which make wrong prediction. $||L||_0$ attack is an iterative algorithm which includes $||L||_2$ attack. The author stated that $||L||_2$ attack is better than $||L||_0$ attack via the expriment. Given an original sample and a target,  $||L||_2$ attack generate an adversarial sample which is closer to the original sample than $||L||_0$ attack. 
+The report covers the two efficient adversarial attacks: $||L||_0$ attack and $||L||_2$ attack. These types of attack aim to generate new samples from original samples which make wrong predictions. $||L||_0$ attack is an iterative algorithm which includes $||L||_2$ attack. The authors stated that $||L||_2$ attack is better than $||L||_0$ attack via the experiment. Given an original sample and a target,  $||L||_2$ attack generate an adversarial sample which is closer to the original sample than $||L||_0$ attack. 
 
-In order to have a better understanding about their proposals, I re-evaluate their experiments and dig deep into their source code. This thesis enriched my background about adversarial example generation in particular and machine learning in general. I am planning to take the following steps: (i) evaluate the quality of generated adversarial samples by using the current criteria such as neuron coverage \cite{DeepXplore}, kmnc/sbc/snac/tknc coverage \cite{deep-gauge}. I am implementing this kinds of criteria and push to my repository on github\footnote{https://github.com/ducanhnguyen/mydeepconcolic}. After evaluating the disadvantage and disadvantage of their proposed attacks, I will analyze the problem to improve these attacks.
+To have a better understanding of their proposals, I re-evaluate their experiments and dig deep into their source code. This thesis enriches my background about adversarial example generation in particular and machine learning in general. I am planning to evaluate the quality of generated adversarial samples by using specific criteria such as neuron coverage \cite{DeepXplore}, kmnc/sbc/snac/tknc coverage \cite{deep-gauge}. I am implementing these kinds of criteria and push up to my repository on github\footnote{https://github.com/ducanhnguyen/mydeepconcolic}. After evaluating the disadvantages and disadvantages of their proposed attacks, I will analyze the problem to improve these attacks.
 
 
 \bibliography{bibitex_thesis} 

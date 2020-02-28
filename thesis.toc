@@ -1,18 +1,18 @@
-\contentsline {section}{\numberline {1}Introduction}{6}
-\contentsline {section}{\numberline {2}Related Works}{7}
-\contentsline {section}{\numberline {3}Problem formulation}{8}
-\contentsline {section}{\numberline {4}Background}{9}
-\contentsline {subsection}{\numberline {4.1}$||L||_p$ norm}{10}
-\contentsline {subsection}{\numberline {4.2}Gradient Descent}{10}
-\contentsline {subsubsection}{\numberline {4.2.1}Standard gradient descent}{10}
-\contentsline {subsubsection}{\numberline {4.2.2}Momentum gradient descent}{11}
-\contentsline {subsubsection}{\numberline {4.2.3}Nesterov accelerated gradient}{12}
-\contentsline {subsection}{\numberline {4.3}Box Constraints}{12}
-\contentsline {section}{\numberline {5}Dataset}{13}
-\contentsline {subsection}{\numberline {5.1}MNIST}{13}
-\contentsline {subsection}{\numberline {5.2}CNN model}{13}
-\contentsline {subsection}{\numberline {5.3}Training}{14}
-\contentsline {section}{\numberline {6}The proposed attacks}{16}
-\contentsline {subsection}{\numberline {6.1}$||L||_2$ attack}{17}
-\contentsline {subsection}{\numberline {6.2}$||L||_0$ attack}{18}
-\contentsline {section}{\numberline {7}Conclusion}{21}
+\contentsline {section}{\numberline {1}Introduction}{5}
+\contentsline {section}{\numberline {2}Related Works}{6}
+\contentsline {section}{\numberline {3}Problem formulation}{7}
+\contentsline {section}{\numberline {4}Background}{8}
+\contentsline {subsection}{\numberline {4.1}$||L||_p$ norm}{9}
+\contentsline {subsection}{\numberline {4.2}Gradient Descent}{9}
+\contentsline {subsubsection}{\numberline {4.2.1}Standard gradient descent}{9}
+\contentsline {subsubsection}{\numberline {4.2.2}Momentum gradient descent}{10}
+\contentsline {subsubsection}{\numberline {4.2.3}Nesterov accelerated gradient}{11}
+\contentsline {subsection}{\numberline {4.3}Box Constraints}{11}
+\contentsline {section}{\numberline {5}Dataset}{12}
+\contentsline {subsection}{\numberline {5.1}MNIST}{12}
+\contentsline {subsection}{\numberline {5.2}CNN model}{12}
+\contentsline {subsection}{\numberline {5.3}Training}{13}
+\contentsline {section}{\numberline {6}The proposed attacks}{15}
+\contentsline {subsection}{\numberline {6.1}$||L||_2$ attack}{16}
+\contentsline {subsection}{\numberline {6.2}$||L||_0$ attack}{17}
+\contentsline {section}{\numberline {7}Conclusion}{19}

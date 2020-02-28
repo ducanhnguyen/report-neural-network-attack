@@ -1,5 +1,5 @@
-\contentsline {figure}{\numberline {1}{\ignorespaces The implementation of CNN architecture used to train MNIST}}{14}
-\contentsline {figure}{\numberline {2}{\ignorespaces Accuracy over iterations when training MNIST}}{15}
-\contentsline {figure}{\numberline {3}{\ignorespaces Loss over iterations when training MNIST}}{16}
-\contentsline {figure}{\numberline {4}{\ignorespaces Perform $||L||_2$ attack on MNIST}}{19}
-\contentsline {figure}{\numberline {5}{\ignorespaces Perform $||L||_0$ attack on MNIST}}{20}
+\contentsline {figure}{\numberline {1}{\ignorespaces The implementation of CNN architecture used to train MNIST}}{13}
+\contentsline {figure}{\numberline {2}{\ignorespaces Accuracy over iterations when training MNIST}}{14}
+\contentsline {figure}{\numberline {3}{\ignorespaces Loss over iterations when training MNIST}}{14}
+\contentsline {figure}{\numberline {4}{\ignorespaces Perform $||L||_2$ attack on MNIST}}{17}
+\contentsline {figure}{\numberline {5}{\ignorespaces Perform $||L||_0$ attack on MNIST}}{19}

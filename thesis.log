@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2019.3.1)  27 FEB 2020 16:38
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2019.3.1)  28 FEB 2020 12:30
  restricted system commands enabled.
 **thesis.tex
 (./thesis.tex
@@ -35,7 +35,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.172 seconds
+luaotfload | main : initialization completed in 0.110 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
@@ -121,71 +121,68 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2017/09/02 v2.17a AMS math features
-\@mathmargin=\skip43
+(/usr/local/texlive/2018/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2017/10/31 v0.5l Insert pages of external PDF documents (AM)
 
-For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2000/06/29 v2.01 AMS text
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count107
+\calc@Bcount=\count108
+\calc@Adimen=\dimen103
+\calc@Bdimen=\dimen104
+\calc@Askip=\skip43
+\calc@Bskip=\skip44
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count109
+\calc@Cskip=\skip45
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks19
-\ex@=\dimen103
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 ))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen104
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks19
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 2016/03/08 v2.02 operator names
+(/usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-\inf@bad=\count107
-LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count108
-\leftroot@=\count109
-LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count110
-\DOTSCASE@=\count111
-LaTeX Info: Redefining \ldots on input line 472.
-LaTeX Info: Redefining \dots on input line 475.
-LaTeX Info: Redefining \cdots on input line 596.
-\Mathstrutbox@=\box28
-\strutbox@=\box29
-\big@size=\dimen105
-LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count112
-\c@MaxMatrixCols=\count113
-\dotsspace@=\muskip10
-\c@parentequation=\count114
-\dspbrk@lvl=\count115
-\tag@help=\toks20
-\row@=\count116
-\column@=\count117
-\maxfields@=\count118
-\andhelp@=\toks21
-\eqnshift@=\dimen106
-\alignsep@=\dimen107
-\tagshift@=\dimen108
-\tagwidth@=\dimen109
-\totwidth@=\dimen110
-\lineht@=\dimen111
-\@envbody=\toks22
-\multlinegap=\skip44
-\multlinetaggap=\skip45
-\mathdisplay@stack=\toks23
-LaTeX Info: Redefining \[ on input line 2817.
-LaTeX Info: Redefining \] on input line 2818.
+Package xcolor Info: Driver file: luatex.def on input line 225.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/luatex.def
+File: luatex.def 2018/01/08 v1.0l Graphics/color driver for luatex
 )
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+))
 (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks24
-)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
@@ -196,48 +193,102 @@ Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: luatex.def on input line 99.
+)
+\Gin@req@height=\dimen105
+\Gin@req@width=\dimen106
+)
+\AM@pagewidth=\dimen107
+\AM@pageheight=\dimen108
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/luatex.def
-File: luatex.def 2018/01/08 v1.0l Graphics/color driver for luatex
+(/usr/local/texlive/2018/texmf-dist/tex/latex/pdfpages/ppluatex.def
+File: ppluatex.def 2017/10/31 v0.5l Pdfpages driver for LuaTeX (AM)
+)
+\AM@pagebox=\box28
+\AM@global@opts=\toks20
+\AM@toc@title=\toks21
+\c@AM@survey=\count110
+\AM@templatesizebox=\box29
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip46
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks22
+\ex@=\dimen109
 ))
-\Gin@req@height=\dimen112
-\Gin@req@width=\dimen113
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen110
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count111
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count112
+\leftroot@=\count113
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count114
+\DOTSCASE@=\count115
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box30
+\strutbox@=\box31
+\big@size=\dimen111
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count116
+\c@MaxMatrixCols=\count117
+\dotsspace@=\muskip10
+\c@parentequation=\count118
+\dspbrk@lvl=\count119
+\tag@help=\toks23
+\row@=\count120
+\column@=\count121
+\maxfields@=\count122
+\andhelp@=\toks24
+\eqnshift@=\dimen112
+\alignsep@=\dimen113
+\tagshift@=\dimen114
+\tagwidth@=\dimen115
+\totwidth@=\dimen116
+\lineht@=\dimen117
+\@envbody=\toks25
+\multlinegap=\skip47
+\multlinetaggap=\skip48
+\mathdisplay@stack=\toks26
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2017/10/31 v2.20.4
-\thm@style=\toks25
-\thm@bodyfont=\toks26
-\thm@headfont=\toks27
-\thm@notefont=\toks28
-\thm@headpunct=\toks29
-\thm@preskip=\skip46
-\thm@postskip=\skip47
-\thm@headsep=\skip48
-\dth@everypar=\toks30
+\thm@style=\toks27
+\thm@bodyfont=\toks28
+\thm@headfont=\toks29
+\thm@notefont=\toks30
+\thm@headpunct=\toks31
+\thm@preskip=\skip49
+\thm@postskip=\skip50
+\thm@headsep=\skip51
+\dth@everypar=\toks32
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
-\multirow@colwidth=\skip49
-\multirow@cntb=\count119
-\multirow@dima=\skip50
-\bigstrutjot=\dimen114
+\multirow@colwidth=\skip52
+\multirow@cntb=\count123
+\multirow@dima=\skip53
+\bigstrutjot=\dimen118
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count120
-\calc@Bcount=\count121
-\calc@Adimen=\dimen115
-\calc@Bdimen=\dimen116
-\calc@Askip=\skip51
-\calc@Bskip=\skip52
-LaTeX Info: Redefining \setlength on input line 80.
-LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count122
-\calc@Cskip=\skip53
-)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
 )
@@ -245,35 +296,35 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count123
-\l_MT_multwidth_dim=\dimen117
+\g_MT_multlinerow_int=\count124
+\l_MT_multwidth_dim=\dimen119
 \origjot=\skip54
-\l_MT_shortvdotswithinadjustabove_dim=\dimen118
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen119
-\l_MT_above_intertext_sep=\dimen120
-\l_MT_below_intertext_sep=\dimen121
-\l_MT_above_shortintertext_sep=\dimen122
-\l_MT_below_shortintertext_sep=\dimen123
+\l_MT_shortvdotswithinadjustabove_dim=\dimen120
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen121
+\l_MT_above_intertext_sep=\dimen122
+\l_MT_below_intertext_sep=\dimen123
+\l_MT_above_shortintertext_sep=\dimen124
+\l_MT_below_shortintertext_sep=\dimen125
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count124
-\lst@gtempboxa=\box30
-\lst@token=\toks31
-\lst@length=\count125
-\lst@currlwidth=\dimen124
-\lst@column=\count126
-\lst@pos=\count127
-\lst@lostspace=\dimen125
-\lst@width=\dimen126
-\lst@newlines=\count128
-\lst@lineno=\count129
-\lst@maxwidth=\dimen127
+\lst@mode=\count125
+\lst@gtempboxa=\box32
+\lst@token=\toks33
+\lst@length=\count126
+\lst@currlwidth=\dimen126
+\lst@column=\count127
+\lst@pos=\count128
+\lst@lostspace=\dimen127
+\lst@width=\dimen128
+\lst@newlines=\count129
+\lst@lineno=\count130
+\lst@maxwidth=\dimen129
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count130
-\lst@skipnumbers=\count131
-\lst@framebox=\box31
+\c@lstnumber=\count131
+\lst@skipnumbers=\count132
+\lst@framebox=\box33
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
@@ -283,18 +334,15 @@ Package: listings 2015/06/04 1.6 (Carsten Heinz)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/glossaries/base/glossaries.sty
 Package: glossaries 2018/04/07 v4.37 (NLCT)
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks32
-\XKV@tempa@toks=\toks33
+\XKV@toks=\toks34
+\XKV@tempa@toks=\toks35
 )
-\XKV@depth=\count132
+\XKV@depth=\count133
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/local/texlive/2018/texmf-dist/tex/latex/mfirstuc/mfirstuc.sty
@@ -302,10 +350,10 @@ Package: mfirstuc 2017/11/14 v2.06 (NLCT)
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count133
+\etb@tempcnta=\count134
 )
-\@glsmfirst=\toks34
-\@glsmrest=\toks35
+\@glsmfirst=\toks36
+\@glsmrest=\toks37
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/textcase/textcase.sty
 Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
@@ -318,7 +366,7 @@ Package: datatool-base 2017/11/12 v2.29 (NLCT)
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/substr/substr.sty
 Package: substr 2009/10/20 v1.2 Handle substrings
-\c@su@anzahl=\count134
+\c@su@anzahl=\count135
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/datatool/datatool-fp.sty
 Package: datatool-fp 2017/11/12 v2.29 (NLCT)
@@ -329,19 +377,19 @@ Package: fp 1995/04/02
 `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
 (/usr/local/texlive/2018/texmf-dist/tex/latex/fp/defpattern.sty
 Package: defpattern 1994/10/12
-\actioncount=\count135
+\actioncount=\count136
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/fp/fp-basic.sty
 Package: fp-basic 1996/05/13
-\FP@xs=\count136
-\FP@xia=\count137
-\FP@xib=\count138
-\FP@xfa=\count139
-\FP@xfb=\count140
-\FP@rega=\count141
-\FP@regb=\count142
-\FP@regs=\count143
-\FP@times=\count144
+\FP@xs=\count137
+\FP@xia=\count138
+\FP@xib=\count139
+\FP@xfa=\count140
+\FP@xfb=\count141
+\FP@rega=\count142
+\FP@regb=\count143
+\FP@regs=\count144
+\FP@times=\count145
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/fp/fp-addons.sty
 Package: fp-addons 1995/03/15
@@ -360,7 +408,7 @@ Package: fp-pas 1994/08/29
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/fp/fp-random.sty
 Package: fp-random 1995/02/23
-\FPseed=\count145
+\FPseed=\count146
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/fp/fp-eqn.sty
 Package: fp-eqn 1995/04/03
@@ -371,27 +419,27 @@ Package: fp-upn 1996/10/21
 (/usr/local/texlive/2018/texmf-dist/tex/latex/fp/fp-eval.sty
 Package: fp-eval 1995/04/03
 )))
-\@dtl@toks=\toks36
-\@dtl@tmpcount=\count146
+\@dtl@toks=\toks38
+\@dtl@tmpcount=\count147
 \dtl@tmplength=\skip55
-\dtl@sortresult=\count147
-\@dtl@numgrpsepcount=\count148
-\@dtl@datatype=\count149
-\dtl@codeA=\count150
-\dtl@codeB=\count151
-\@dtl@foreach@level=\count152
+\dtl@sortresult=\count148
+\@dtl@numgrpsepcount=\count149
+\@dtl@datatype=\count150
+\dtl@codeA=\count151
+\dtl@codeB=\count152
+\@dtl@foreach@level=\count153
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/glossaries/base/glossaries-compat
 ible-307.sty
 Package: glossaries-compatible-307 2018/04/07 v4.37 (NLCT)
 )
-\gls@level=\count153
-\@gls@tmpb=\toks37
+\gls@level=\count154
+\@gls@tmpb=\toks39
 \gls@tmplen=\skip56
-\glskeylisttok=\toks38
-\glslabeltok=\toks39
-\glsshorttok=\toks40
-\glslongtok=\toks41
+\glskeylisttok=\toks40
+\glslabeltok=\toks41
+\glsshorttok=\toks42
+\glslongtok=\toks43
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/glossaries/styles/glossary-hypern
 av.sty
@@ -411,17 +459,17 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LTright=\skip59
 \LTpre=\skip60
 \LTpost=\skip61
-\LTchunksize=\count154
-\LTcapwidth=\dimen128
-\LT@head=\box32
-\LT@firsthead=\box33
-\LT@foot=\box34
-\LT@lastfoot=\box35
-\LT@cols=\count155
-\LT@rows=\count156
-\c@LT@tables=\count157
-\c@LT@chunks=\count158
-\LT@p@ftn=\toks42
+\LTchunksize=\count155
+\LTcapwidth=\dimen130
+\LT@head=\box34
+\LT@firsthead=\box35
+\LT@foot=\box36
+\LT@lastfoot=\box37
+\LT@cols=\count156
+\LT@rows=\count157
+\c@LT@tables=\count158
+\c@LT@chunks=\count159
+\LT@p@ftn=\toks44
 )
 \glsdescwidth=\skip62
 \glspagelistwidth=\skip63
@@ -431,29 +479,29 @@ sty
 Package: glossary-super 2018/04/07 v4.37 (NLCT)
  (/usr/local/texlive/2018/texmf-dist/tex/latex/supertabular/supertabular.sty
 Package: supertabular 2004/02/20 v4.1e the supertabular environment
-\c@tracingst=\count159
-\ST@wd=\dimen129
+\c@tracingst=\count160
+\ST@wd=\dimen131
 \ST@rightskip=\skip64
 \ST@leftskip=\skip65
 \ST@parfillskip=\skip66
-\ST@pageleft=\dimen130
-\ST@headht=\dimen131
-\ST@tailht=\dimen132
-\ST@pagesofar=\dimen133
-\ST@pboxht=\dimen134
-\ST@lineht=\dimen135
-\ST@stretchht=\dimen136
-\ST@prevht=\dimen137
-\ST@toadd=\dimen138
-\ST@dimen=\dimen139
-\ST@pbox=\box36
+\ST@pageleft=\dimen132
+\ST@headht=\dimen133
+\ST@tailht=\dimen134
+\ST@pagesofar=\dimen135
+\ST@pboxht=\dimen136
+\ST@lineht=\dimen137
+\ST@stretchht=\dimen138
+\ST@prevht=\dimen139
+\ST@toadd=\dimen140
+\ST@dimen=\dimen141
+\ST@pbox=\box38
 ))
 (/usr/local/texlive/2018/texmf-dist/tex/latex/glossaries/styles/glossary-tree.s
 ty
 Package: glossary-tree 2018/04/07 v4.37 (NLCT)
 \glstreeindent=\skip67
 ))
-\c@definition=\count160
+\c@definition=\count161
 LaTeX Info: Redefining \max2 on input line 22.
 \glswrite=\write3
 \glo@main@file=\write4
@@ -466,10 +514,6 @@ LaTeX Warning: Label `eqn:sgd-momentum-v2' multiply defined.
 
 
 LaTeX Warning: Label `eqn:modified-adversarial-sample-formula-v2' multiply defin
-ed.
-
-
-LaTeX Warning: Label `eqn:modified-adversarial-sample-formula-v6' multiply defin
 ed.
 
 )
@@ -489,34 +533,29 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
 LaTeX Font Info:    ... okay on input line 36.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
 LaTeX Font Info:    ... okay on input line 36.
+\AtBeginShipoutBox=\box39
  (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count161
-\scratchdimen=\dimen140
-\scratchbox=\box37
-\nofMPsegments=\count162
-\nofMParguments=\count163
-\everyMPshowfont=\toks43
-\MPscratchCnt=\count164
-\MPscratchDim=\dimen141
-\MPnumerator=\count165
-\makeMPintoPDFobject=\count166
-\everyMPtoPDFconversion=\toks44
+\scratchcounter=\count162
+\scratchdimen=\dimen142
+\scratchbox=\box40
+\nofMPsegments=\count163
+\nofMParguments=\count164
+\everyMPshowfont=\toks45
+\MPscratchCnt=\count165
+\MPscratchDim=\dimen143
+\MPnumerator=\count166
+\makeMPintoPDFobject=\count167
+\everyMPtoPDFconversion=\toks46
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)))
+))
 (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
@@ -533,14 +572,10 @@ Package ifluatex Info: LuaTeX detected.
 (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO)
 
-
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
-)
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-\pdftexcmds@toks=\toks45
+\pdftexcmds@toks=\toks47
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 43
 8.
@@ -553,27 +588,68 @@ Package grfext Info: Graphics extension search list:
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 
 ))
-\c@lstlisting=\count167
-LaTeX Font Info:    Try loading font information for U+msa on input line 37.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 37.
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+(/usr/local/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+))
+\c@lstlisting=\count168
+<bia.pdf, id=1, 614.295pt x 794.97pt>
+File: bia.pdf Graphic file (type pdf)
+<use bia.pdf>
+Package luatex.def Info: bia.pdf  used on input line 38.
+(luatex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: bia.pdf Graphic file (type pdf)
+<use bia.pdf>
+Package luatex.def Info: bia.pdf  used on input line 38.
+(luatex.def)             Requested size: 614.29349pt x 794.96806pt.
+<bia.pdf, id=4, page=1, 614.295pt x 794.97pt>
+File: bia.pdf Graphic file (type pdf)
+<use bia.pdf, page 1>
+Package luatex.def Info: bia.pdf , page1 used on input line 38.
+(luatex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: bia.pdf Graphic file (type pdf)
+<use bia.pdf, page 1>
+Package luatex.def Info: bia.pdf , page1 used on input line 38.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: bia.pdf Graphic file (type pdf)
+<use bia.pdf, page 1>
+Package luatex.def Info: bia.pdf , page1 used on input line 38.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: bia.pdf Graphic file (type pdf)
+<use bia.pdf, page 1>
+Package luatex.def Info: bia.pdf , page1 used on input line 38.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: bia.pdf Graphic file (type pdf)
+<use bia.pdf, page 1>
+Package luatex.def Info: bia.pdf , page1 used on input line 38.
+(luatex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [1
 
 
 \openout3 = thesis.ist
-{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
+<./bia.pdf>]
+LaTeX Font Info:    Try loading font information for U+msa on input line 48.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 48.
 
-(./thesis.toc)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
+ (./thesis.toc)
 \tf@toc=\write5
 
 \openout5 = thesis.toc
- [4] (./thesis.lof)
+
+[3] (./thesis.lof)
 \tf@lof=\write6
 
 \openout6 = thesis.lof
@@ -581,99 +657,83 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@lot=\write7
 
 \openout7 = thesis.lot
- [5] [6] [7] [8] [9]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 250.
+ [4] [5] [6] [7] [8]
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 255.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 250.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 255.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 250.
- [10] [11]
-
-LaTeX Warning: Reference `eqa:change-of-variables' on page 12 undefined on input
- line 326.
-
-[12] [13]
-<img/MNIST.png, id=60, 299.1175pt x 316.18124pt>
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 255.
+ [9] [10] [11]
+[12]
+<img/MNIST.png, id=128, 299.1175pt x 316.18124pt>
 File: img/MNIST.png Graphic file (type png)
 <use img/MNIST.png>
-Package luatex.def Info: img/MNIST.png  used on input line 383.
+Package luatex.def Info: img/MNIST.png  used on input line 384.
 (luatex.def)             Requested size: 209.38081pt x 221.32535pt.
- [14<./img/MNIST.png>]
-<img/MNIST_accuracy.png, id=66, 850.17625pt x 635.37375pt>
+ [13<./img/MNIST.png>]
+<img/MNIST_accuracy.png, id=134, 850.17625pt x 635.37375pt>
 File: img/MNIST_accuracy.png Graphic file (type png)
 <use img/MNIST_accuracy.png>
-Package luatex.def Info: img/MNIST_accuracy.png  used on input line 398.
-(luatex.def)             Requested size: 297.56615pt x 222.38414pt.
-<img/MNIST_loss.png, id=67, 850.17625pt x 635.37375pt>
+Package luatex.def Info: img/MNIST_accuracy.png  used on input line 399.
+(luatex.def)             Requested size: 255.05484pt x 190.61359pt.
+<img/MNIST_loss.png, id=135, 850.17625pt x 635.37375pt>
 File: img/MNIST_loss.png Graphic file (type png)
 <use img/MNIST_loss.png>
-Package luatex.def Info: img/MNIST_loss.png  used on input line 406.
-(luatex.def)             Requested size: 297.56615pt x 222.38414pt.
- [15<./img/MNIST_accuracy.png>]
-<img/f.png, id=72, 443.6575pt x 258.9675pt>
+Package luatex.def Info: img/MNIST_loss.png  used on input line 407.
+(luatex.def)             Requested size: 255.05484pt x 190.61359pt.
+ [14<./img/MNIST_accuracy.png><./img/MNIST_loss.png>]
+<img/f.png, id=141, 443.6575pt x 258.9675pt>
 File: img/f.png Graphic file (type png)
 <use img/f.png>
-Package luatex.def Info: img/f.png  used on input line 441.
+Package luatex.def Info: img/f.png  used on input line 442.
 (luatex.def)             Requested size: 266.19655pt x 155.38168pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[16<./img/MNIST_loss.png>] [17<./img/f.png>]
-<img/L2-attack-sample.png, id=82, 652.4375pt x 679.53876pt>
+[15<./img/f.png>] [16]
+<img/L2-attack-sample.png, id=150, 652.4375pt x 679.53876pt>
 File: img/L2-attack-sample.png Graphic file (type png)
 <use img/L2-attack-sample.png>
-Package luatex.def Info: img/L2-attack-sample.png  used on input line 503.
-(luatex.def)             Requested size: 306.64566pt x 319.38327pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[18] [19<./img/L2-attack-sample.png>]
-<img/L0-attack-sample.png, id=90, 652.4375pt x 679.53876pt>
+Package luatex.def Info: img/L2-attack-sample.png  used on input line 504.
+(luatex.def)             Requested size: 326.21794pt x 339.76855pt.
+ [17<./img/L2-attack-sample.png>]
+<img/L0-attack-sample.png, id=155, 652.4375pt x 679.53876pt>
 File: img/L0-attack-sample.png Graphic file (type png)
 <use img/L0-attack-sample.png>
-Package luatex.def Info: img/L0-attack-sample.png  used on input line 543.
-(luatex.def)             Requested size: 306.64566pt x 319.38327pt.
- [20<./img/L0-attack-sample.png>]
-(./thesis.bbl [21]
+Package luatex.def Info: img/L0-attack-sample.png  used on input line 544.
+(luatex.def)             Requested size: 326.21794pt x 339.76855pt.
+ [18] [19<./img/L0-attack-sample.png>] (./thesis.bbl [20]
 Underfull \hbox (badness 3977) in paragraph at lines 58--61
 []\T1/lmr/m/n/12 Y. Tian, K. Pei, S. Jana, and B. Ray, ``Deeptest: Au-to-
  []
 
-[22])
+)
 
 Package glossaries Warning: No \printglossary or \printglossaries found. 
 (Remove \makeglossaries if you don't want any glossaries.) 
 This document will not have a glossary.
 
-[23] (./thesis.aux)
-
-LaTeX Warning: There were undefined references.
-
+[21] (./thesis.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 )
 
 Here is how much of LuaTeX's memory you used:
- 9257 strings out of 494413
- 125171,266212 words of node,token memory allocated
- 613 words of node memory still in use:
-   5 hlist, 2 vlist, 2 rule, 6 glue, 1 kern, 27 attribute, 62 glue_spec, 27 attr
+ 10511 strings out of 494413
+ 125171,319454 words of node,token memory allocated
+ 619 words of node memory still in use:
+   5 hlist, 2 vlist, 2 rule, 7 glue, 1 kern, 28 attribute, 61 glue_spec, 28 attr
 ibute_list, 1 write nodes
-   avail lists: 1:2,2:314,3:119,4:18,5:244,6:19,7:3801,8:68,9:176,10:14,11:320
- 12815 multiletter control sequences out of 65536+600000
- 79 fonts using 5002919 bytes
- 45i,17n,39p,1970b,303s stack positions out of 5000i,500n,10000p,200000b,100000s
+   avail lists: 2:326,3:104,4:30,5:245,6:22,7:3717,8:66,9:198,10:14,11:313
+ 13970 multiletter control sequences out of 65536+600000
+ 77 fonts using 4837527 bytes
+ 45i,18n,48p,1970b,583s stack positions out of 5000i,500n,10000p,200000b,100000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/tex
 live/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2018/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/tex
@@ -688,16 +748,15 @@ e1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1
 blic/lm/lmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmb
 x12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr10.pfb></us
 r/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texl
-ive/2018/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2018/tex
-mf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2018/texmf-dist/fonts
-/type1/public/lm/lmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public
-/lm/lmri12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy10.
-pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm
-10.pfb>
-Output written on thesis.pdf (23 pages, 1015290 bytes).
+ive/2018/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2018/texm
+f-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/
+type1/public/lm/lmri12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publi
+c/lm/lmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/
+symbols/msbm10.pfb>
+Output written on thesis.pdf (22 pages, 1088843 bytes).
 
-PDF statistics: 168 PDF objects out of 1000 (max. 8388607)
- 110 compressed objects within 2 object streams
+PDF statistics: 230 PDF objects out of 1000 (max. 8388607)
+ 149 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 
